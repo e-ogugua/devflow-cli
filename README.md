@@ -11,7 +11,7 @@
   <h3>Professional Developer Tools Suite</h3>
   <p>Automate your development workflow with elegant, production-ready tools</p>
   
-  <a href="https://devflow-cli.vercel.app">🌐 Live Demo</a> •
+  <a href="https://devflow-dc9a8oe78-emmanuel-c-oguguas-projects.vercel.app">🌐 Live Demo</a> •
   <a href="#installation">📦 Installation</a> •
   <a href="#features">✨ Features</a> •
   <a href="#documentation">📚 Documentation</a>
