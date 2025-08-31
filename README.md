@@ -1,69 +1,117 @@
-# React + TypeScript + Vite
+# DevFlow CLI 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<div align="center">
+  <img src="https://img.shields.io/badge/version-1.0.0-blue.svg" alt="Version">
+  <img src="https://img.shields.io/badge/license-MIT-green.svg" alt="License">
+  <img src="https://img.shields.io/badge/TypeScript-Ready-blue.svg" alt="TypeScript">
+  <img src="https://img.shields.io/badge/React-18+-61DAFB.svg" alt="React">
+</div>
 
-Currently, two official plugins are available:
+<div align="center">
+  <h3>Professional Developer Tools Suite</h3>
+  <p>Automate your development workflow with elegant, production-ready tools</p>
+  
+  <a href="https://devflow-cli.vercel.app">🌐 Live Demo</a> •
+  <a href="#installation">📦 Installation</a> •
+  <a href="#features">✨ Features</a> •
+  <a href="#documentation">📚 Documentation</a>
+</div>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🎯 Overview
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+DevFlow CLI is a comprehensive developer productivity suite that automates common development workflows. Built with modern web technologies, it provides both a beautiful web interface and powerful command-line tools to streamline your development process.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 🌟 Key Features
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+- **🏗️ Project Scaffolding** - Generate modern React, Node.js, and full-stack applications with best practices
+- **🔀 Git Flow Automation** - Streamline branching, merging, and release workflows
+- **🧪 API Testing Suite** - Generate comprehensive API tests and mock data
+- **📊 Workflow Analytics** - Track productivity metrics and development patterns
+- **🌙 Dark/Light Mode** - Professional UI with system preference detection
+- **⚡ Real-time Terminal** - Interactive command execution with live output
+- **📱 Responsive Design** - Works seamlessly across all devices
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🚀 Quick Start
+
+### Prerequisites
+
+- Node.js 18+ 
+- npm or yarn
+- Git
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/emmanuelos/devflow-cli.git
+cd devflow-cli
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Production Build
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```bash
+# Build for production
+npm run build
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+# Preview production build
+npm run preview
+```
+
+## 🛠️ Available Tools
+
+### 1. React App Scaffold
+Create modern React TypeScript applications with:
+- ⚡ Vite build system
+- 🎨 Tailwind CSS styling
+- 📝 TypeScript configuration
+- 🧪 Testing setup (Jest + React Testing Library)
+- 📦 ESLint + Prettier
+- 🔧 VS Code settings
+
+```bash
+devflow create react-app my-project
+```
+
+### 2. Git Flow Helper
+Automate Git workflows:
+- 🌿 Initialize Git Flow branching model
+- 🔀 Create feature/hotfix/release branches
+- 🏷️ Automated semantic versioning
+- 📋 Generate changelogs
+
+```bash
+devflow git init-flow
+devflow git feature start my-feature
+devflow git release 1.2.0
+```
+
+### 3. API Test Suite
+Generate comprehensive API testing:
+- 🧪 Automated test generation
+- 📊 Mock data creation
+- 🔍 Response validation
+- 📈 Performance benchmarking
+
+```bash
+devflow test api --endpoint /users --methods GET,POST,PUT,DELETE
+```
+
+### 4. Workflow Analytics
+Track development productivity:
+- ⏱️ Time tracking
+- 📊 Command usage statistics
+- 🎯 Productivity insights
+- 📈 Performance trends
+
+```bash
+devflow stats --period week
+devflow stats --export csv
 ```

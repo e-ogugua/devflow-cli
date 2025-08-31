@@ -1,7 +1,16 @@
 {
   "name": "devflow-cli",
-  "private": true,
-  "version": "0.0.0",
+  "private": false,
+  "version": "1.0.0",
+  "description": "Professional developer tools suite for automating workflows, project scaffolding, and productivity enhancement",
+  "keywords": ["developer-tools", "cli", "workflow", "productivity", "scaffolding", "git-helpers"],
+  "author": "Emmanuel Ogugua <emmachuka@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emmanuelos/devflow-cli.git"
+  },
+  "homepage": "https://devflow-cli.vercel.app",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -10,8 +19,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@headlessui/react": "^2.2.7",
+    "@tailwindcss/typography": "^0.5.16",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.23.12",
+    "lucide-react": "^0.542.0",
     "react": "^19.1.1",
-    "react-dom": "^19.1.1"
+    "react-dom": "^19.1.1",
+    "tailwind-merge": "^3.3.1",
+    "tailwindcss": "^4.1.12"
   },
   "devDependencies": {
     "@eslint/js": "^9.33.0",
